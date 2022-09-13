@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron" >
+    <h1>Welcome to The Login Page!</h1>
+    <p>Please Provide your name and Password</p>
+    <p>Keep in mind that the password should be <ul>
+        <li>One capital letter</li>
+        <li>One small letter</li>
+        <li>one digit</li>
+    </ul></p>
+    <a href="{{url_for('form')}}">Please provide the details</a>
+    
+</div>
+{% endblock %}

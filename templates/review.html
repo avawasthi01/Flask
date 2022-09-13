@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class = "jumbotron">
+    <p>Hi {{name}} Your Password {% if status %} <span>
+        is meeting the requirement
+    </span>
+    {% else %}<span>   
+        is not meeting the requirement
+    </span>
+    {% endif%}
+</p>
+</div>
+
+{% endblock %}
